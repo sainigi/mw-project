@@ -1,1 +1,28 @@
-<p>navbar-content works!</p>
+<div class=" w-full justify-center">
+    <div class="bg-gray-950 text-white w-full h-1/2 shadow-lg p-6">
+
+        <div class="flex justify-around">
+            <div *ngFor="let item of category[selectedSection].sections" class="flex flex-col">
+                <h1 class="text-center">{{item.name}}</h1>
+                <button mat-button class="text-white" *ngFor="let section of item.items">{{section.name}}</button>
+            </div>
+
+            <div class="hidden lg:block">
+                <div class="mb-5">
+                    <img class="w-[19rem] h-[20rem] object-cover object-top rounded-md" src="https://assets.ajio.com/cms/AJIO/WEB/15062021-D-NewArrival-Trends-tanktops.jpg" alt="">
+                </div>
+                <p class="text-gray-600">New Arrival</p>
+            </div>
+
+            <div class="hidden lg:block">
+                <div class="mb-5">
+                    <img class="w-[19rem] h-[20rem] object-cover object-top rounded-md" src="https://assets.ajio.com/cms/AJIO/WEB/15062021-D-NewArrival-Trends-WFHmusthaves.jpg" alt="">
+                </div>
+                <p class="text-gray-600">New Arrival</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

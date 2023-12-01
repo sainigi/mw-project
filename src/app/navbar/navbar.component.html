@@ -1,0 +1,52 @@
+<div
+  class="fixed top-0 z-50 right-0 left-0 bg-green-400 text-gray-800 px-5 lg:px-20"
+>
+  <div class="h-16 flex items-center justify-between">
+    <div class="flex items-center">
+      <div class="mx-5">
+        <img
+          class="w-28" style=" filter: grayscale(5);"
+          src="../../assets/Logo/saini-dresses-logo-zip-file/svg/logo-no-background.svg"
+          alt="Saini Dresses"
+        />
+      </div>
+
+      <div class="">
+        <div class="flex space-x-4">
+          <a routerLink="/" class="text-gray-800">Saini Dresses</a>
+          <div>
+            <button mat-button (click)="openNavbarContent('men')">Men</button>
+          </div>
+          <div>
+            <button mat-button (click)="openNavbarContent('women')">
+              Women
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center">
+      <button mat-icon-button (click)="navigateToCart('cart')">
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
+      <button mat-raised-button type="" color="accent">Login</button>
+
+      <div class="ml-3 flex items-center">
+        <div class="flex items-center space-x-5">
+            <span class="font-bold text-lg">Saini</span>
+            <button mat-button [matMenuTriggerFor]="profileMenu">
+                <img class="w-6 h-6" src="https://cdn.pixabay.com/photo/2014/04/02/14/11/male-306408_640.png" alt="">
+            </button>
+
+            <mat-menu #profileMenu="matMenu">
+                <button mat-menu-item>Orders</button>
+                <button mat-menu-item>Profile</button>
+                <button mat-menu-item>Logout</button>
+            </mat-menu>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

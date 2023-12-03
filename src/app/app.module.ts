@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FeatureModule } from './Module/feature/feature.module';
 import { SharedModule } from './Module/shared/shared.module';
+import { AdminModule } from './Module/admin/admin.module';
 
 
 
@@ -20,7 +21,8 @@ import { SharedModule } from './Module/shared/shared.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     FeatureModule,
-    SharedModule
+    SharedModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

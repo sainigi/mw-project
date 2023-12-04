@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { ProductCardComponent } from './components/product-card/product-card.component';
+import { StarRatingComponent } from './components/star-rating/star-rating.component';
 
 
 
@@ -15,7 +16,8 @@ import { ProductCardComponent } from './components/product-card/product-card.com
     NavbarComponent,
     FooterComponent,
     NavbarContentComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    StarRatingComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { ProductCardComponent } from './components/product-card/product-card.com
   exports:[
     NavbarComponent,
     FooterComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    StarRatingComponent
   ]
   
 })

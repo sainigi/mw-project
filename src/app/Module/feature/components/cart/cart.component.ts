@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class CartComponent {
 
+  cart=[1,1,1,1]
+
 }

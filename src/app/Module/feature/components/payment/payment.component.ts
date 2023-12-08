@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class PaymentComponent {
 
+  products:any=[1,1,1]
+  cart:boolean=true;
+
+  navigatetoCheckout(){
+
+  }
+
 }

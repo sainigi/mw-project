@@ -9,6 +9,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { StarRatingComponent } from './components/star-rating/star-rating.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
+import { AddressCardComponent } from './components/address-card/address-card.component';
+import { OrderTrackerComponent } from './components/order-tracker/order-tracker.component';
+import { MatDivider, MatDividerModule } from '@angular/material/divider';
 
 
 
@@ -19,20 +22,25 @@ import { CartItemComponent } from './components/cart-item/cart-item.component';
     NavbarContentComponent,
     ProductCardComponent,
     StarRatingComponent,
-    CartItemComponent
+    CartItemComponent,
+    AddressCardComponent,
+    OrderTrackerComponent
   ],
   imports: [
     CommonModule,
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
+    MatDividerModule
   ],
   exports:[
     NavbarComponent,
     FooterComponent,
     ProductCardComponent,
     StarRatingComponent,
-    CartItemComponent
+    CartItemComponent,
+    AddressCardComponent,
+    OrderTrackerComponent
   ]
   
 })

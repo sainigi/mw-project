@@ -11,7 +11,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatRadioModule} from '@angular/material/radio';
 import { SharedModule } from '../shared/shared.module';
 import { CartComponent } from './components/cart/cart.component';
@@ -23,7 +23,12 @@ import { OrderComponent } from './components/order/order.component';
 import { OrderDetailsComponent } from './components/order-details/order-details.component';
 import { ProductReviewCardComponent } from './components/product-details/product-review-card/product-review-card.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-
+import { AddressFormComponent } from './components/checkout/address-form/address-form.component';
+import {AsyncPipe} from '@angular/common';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { OrderCartComponent } from './components/order/order-cart/order-cart.component';
 
 
 
@@ -42,7 +47,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     PaymentSuccessComponent,
     OrderComponent,
     OrderDetailsComponent,
-    ProductReviewCardComponent
+    ProductReviewCardComponent,
+    AddressFormComponent,
+    OrderCartComponent
   ],
   imports: [
     CommonModule,
@@ -54,7 +61,14 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     FormsModule,
     MatRadioModule,
     SharedModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatAutocompleteModule,
+    AsyncPipe,
+    MatDividerModule
   ],
   exports:[
     FeatureComponent,

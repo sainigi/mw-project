@@ -21,7 +21,7 @@ const routes: Routes = [
   {path:'checkout/payment/:id',component:PaymentComponent},
   {path:'payment-success',component:PaymentSuccessComponent},
   {path:'account/orders',component:OrderComponent},
-  {path:'orders/:id',component:OrderDetailsComponent},
+  {path:'order/:id',component:OrderDetailsComponent},
   {path:':levelOne/:levelTwo/:levelThree', component:ProductsComponent},
 
 ];

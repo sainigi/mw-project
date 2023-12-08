@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class OrderDetailsComponent {
 
+  orders=[1,1,1];
+
+  steps=[
+    {id:0,title:"PLACED",isComplete:true},
+    {id:1,title:"CONFIRMED",isComplete:true},
+    {id:2,title:"SHIPPED",isComplete:false},
+    {id:3,title:"DELIVERED",isComplete:false},
+  ]
+
 }
